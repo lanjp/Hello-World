@@ -1,5 +1,7 @@
 ThingsIBought::Application.routes.draw do
+  root :to => 'projects#index'
   resources :purchases
+  resources :projects
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
